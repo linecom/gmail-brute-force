@@ -29,13 +29,13 @@ git clone https://github.com/oliviagallucci/gmail-brute-force
 ```
 
 ### Usage
-
 ```
 # navigate to the program on the machine 
 cd /filepath/gmail-brute-force/
+```
 
+```
 # python3  gmail-brute-force.py  target_email  password_list_file  wait_seconds 
-
 python3 gmail-brute-force.py target@gmail.com password_list.txt 3
 ```
 
