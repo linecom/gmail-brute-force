@@ -5,6 +5,8 @@
 
 # gmail-brute-force
 
+TLDR: A python script to brute-force GMail accounts with a target email address, a password list, and a wait duration betweenlogin attempts.
+
 This program allows you to brute-force GMail accounts by specifying a target email address, a password list, and a duration to wait between every "batch" of login attempts. The waiting period is necessary because you will be flagged by GMail otherwise. 
 
 If you are unsure where to find password lists, I included links to some popular ones in the [RESOURCES] section. 
