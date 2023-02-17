@@ -7,6 +7,20 @@ import argparse, smtplib, os, time, sys, random, datetime
 
 BATCH_ATTEMPTS = 10
 
+#
+# display progress bar 
+#
+
+def progress(curr, total, suffix=""): 
+    bar_length = 100
+    filled_length = int(round(bar_length * curr / float(total)))
+    percent = round(100.0 * curr/float(total),1)
+    bar = ("=" * filled_length ) + ("-" * (bar_length - filled_length))
+    sys.stdout.write("[%s] %s%s ...%s\r" %(bar, percent, "%", suffix))
+    sys.stdout.flush()
+    for i in range(11):
+        time.sleep(random.random())
+        progress(i,10)
 
 #
 # try to login into the gmail account
