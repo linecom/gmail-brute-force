@@ -1,4 +1,4 @@
-![](https://github.com/oliviagallucci/gmail-brute-force.gif)
+![](https://github.com/oliviagallucci/gmail-brute-force/blob/master/gmail-brute-force.gif)
 ![Python](https://img.shields.io/badge/pythonv-3.8-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-green.svg?style=for-the-badge)](http://perso.crans.org/besson/LICENSE.html)
