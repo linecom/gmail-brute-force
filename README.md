@@ -6,98 +6,62 @@
 
 # gmail-brute-force
 
-TLDR: A python script to brute-force GMail accounts with a target email address, a password list, and a wait duration betweenlogin attempts.
-
-This program allows you to brute-force GMail accounts by specifying a target email address, a password list, and a duration to wait between every "batch" of login attempts. The waiting period is necessary because you will be flagged by GMail otherwise. 
-
-If you are unsure where to find password lists, I included links to some popular ones in the [RESOURCES] section. 
+A Python script to brute-force GMail accounts with a target email address, a password list, and a wait duration between login attempts. The waiting period is necessary because you will be flagged by GMail otherwise. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-What things you need to install the software and how to install them
+#### Install the command-line parser 
 
 ```
-Give examples
+pip install argparse
 ```
+
+#### Obtain password lists 
+
+If you do not have any password lists, I recommend [Daniel Miessler](https://github.com/danielmiessler)'s [SecList passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords). 
 
 ## Installation 
 
-argparse dependency 
-
 ```script 
-git clone [repo]
+git clone https://github.com/oliviagallucci/gmail-brute-force
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+### Usage
 
 ```
-Give the example
+# navigate to the program on the machine 
+cd /filepath/gmail-brute-force/
+
+# python3  gmail-brute-force.py  target_email  password_list_file  wait_seconds 
+
+python3 gmail-brute-force.py target@gmail.com password_list.txt 3
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+### How to submit a pull request 
 
-## Versioning
+1. Clone the project 
+2. Make your modifications 
+  * Use in-line comments to explain your modifications. 
+  * If your modifications are larger, please use multiple commits in your pull request. 
+3. Submit a pull request. Explain your changes, why you made them, etc.
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Releases 
+
+Alpha 1.0
 
 ## Authors
 
-* **Billie Thompson** - READMD.md format - [PurpleBooth](https://github.com/PurpleBooth)
+* [Olivia Gallucci](https://github.com/oliviagallucci) - code author 
 * See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+This project is licensed under the General Public License version 3.0 - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* [@PurpleBooth](https://github.com/PurpleBooth) for READMD.md inspiration
