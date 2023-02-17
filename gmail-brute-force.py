@@ -1,5 +1,19 @@
 #!/usr/bin/python3
-import argparse, smtplib
+import argparse, smtplib, os
+from pprint import pprint
+
+"""
+BLAHGGG
+
+
+READ ME IS EVERYTHING 
+
+MAKE CUTE READ ME BASIC BEFORE CONTINUING 
+
+also turn this into script -l0kueser vprolly
+
+"""
+
 
 #
 # Connect to GMail's SMTP server 
@@ -33,9 +47,11 @@ def cmd_parse():
 
 def product_display():
     # clear terminal 
-    # print title (make memorable)
-    # print author names
-    print()
+    os.system("cls" if os.name == "nt" else "clear")
+    # print title 
+    print("*****                   *****" +
+          "***** GMAIL BRUTE FORCE *****" + 
+          "*****                   *****")
     
 
 #
