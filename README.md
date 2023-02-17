@@ -1,3 +1,4 @@
+![](https://github.com/oliviagallucci/gmail-brute-force.gif)
 ![Python](https://img.shields.io/badge/pythonv-3.8-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-green.svg?style=for-the-badge)](http://perso.crans.org/besson/LICENSE.html)
@@ -90,8 +91,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 * **Billie Thompson** - READMD.md format - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
@@ -101,6 +101,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-
-
-[![Contributors over time](https://contributor-graph-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=Naereen/badges)](https://www.apiseven.com/en/contributor-graph?chart=contributorOverTime&repo=Naereen/badges)
