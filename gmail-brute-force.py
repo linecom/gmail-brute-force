@@ -3,12 +3,6 @@ import argparse, smtplib, os
 from pprint import pprint
 
 """
-BLAHGGG
-
-
-READ ME IS EVERYTHING 
-
-MAKE CUTE READ ME BASIC BEFORE CONTINUING 
 
 also turn this into script -l0kueser vprolly
 
