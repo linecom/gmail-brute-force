@@ -62,6 +62,17 @@ Alpha 1.0
 
 This project is licensed under the General Public License version 3.0 - see the [LICENSE.md](LICENSE.md) file for details
 
+## Warranty  
+The author of this tool offers no warranty or guarantee for its performance, reliability, or suitability for any particular purpose.
+
+The tool is provided "as is" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+Use of this tool is entirely at the user's own risk. The author does not accept any liability for any loss, damage or expense incurred by the user or any third party resulting from the use of this tool, whether direct or indirect.
+
+Furthermore, the author expressly disclaims any responsibility or liability for the accuracy, content, or availability of information found through the use of this tool, or for any harm caused by viruses, malware, or other harmful components that may be introduced into your system as a result of using this tool.
+
+By using this tool, the user acknowledges that they have read this warranty statement and agree to assume all risks associated with its use.
+
 ## Acknowledgments
 
 * [@PurpleBooth](https://github.com/PurpleBooth) for READMD.md inspiration
