@@ -45,8 +45,8 @@ python3 gmail-brute-force.py target@gmail.com password_list.txt 3
 
 1. Clone the project 
 2. Make your modifications 
-  * Use in-line comments to explain your modifications. 
-  * If your modifications are larger, please use multiple commits in your pull request. 
+   * Use in-line comments to explain your modifications. 
+   * If your modifications are larger, please use multiple commits in your pull request. 
 3. Submit a pull request. Explain your changes, why you made them, etc.
 
 ## Releases 
