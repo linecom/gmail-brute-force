@@ -19,7 +19,7 @@
 
 ### Prerequisites
 
-#### Install the command-line parser 
+Install the command-line parser 
 
 ```
 pip install argparse
