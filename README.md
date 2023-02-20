@@ -13,8 +13,6 @@
 
 </div>
 
-
-
 ## Getting Started
 
 ### Prerequisites
@@ -27,7 +25,7 @@ pip install argparse
 
 #### Obtain password lists 
 
-If you do not have any password lists, I recommend [Daniel Miessler](https://github.com/danielmiessler)'s [SecList passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords). 
+If you do not have any password lists, I recommend [Daniel Miessler](https://github.com/danielmiessler)'s [SecList](https://github.com/danielmiessler/SecLists/tree/master/Passwords) passwords.
 
 ## Installation 
 
@@ -79,7 +77,3 @@ Use of this tool is entirely at the user's own risk. The author does not accept 
 Furthermore, the author expressly disclaims any responsibility or liability for the accuracy, content, or availability of information found through the use of this tool, or for any harm caused by viruses, malware, or other harmful components that may be introduced into your system as a result of using this tool.
 
 By using this tool, the user acknowledges that they have read this warranty statement and agree to assume all risks associated with its use.
-
-## Acknowledgments
-
-* [@PurpleBooth](https://github.com/PurpleBooth) for READMD.md inspiration
