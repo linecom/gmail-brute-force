@@ -1,12 +1,19 @@
-![](https://github.com/oliviagallucci/gmail-brute-force/blob/master/misc/gmail-brute-force.gif)
-![Python](https://img.shields.io/badge/pythonv-3.8-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-green.svg?style=for-the-badge)](http://perso.crans.org/besson/LICENSE.html)
-![Github-sponsors](https://img.shields.io/badge/sponsor-pink?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)
+<div align="center">
 
-# gmail-brute-force
+  # gmail-brute-force
+  
+  ![](https://github.com/oliviagallucci/gmail-brute-force/blob/master/misc/gmail-brute-force.gif)
+  
+  A Python script to brute-force GMail accounts with a target email address, a password list, and a wait duration between login attempts. The waiting period is necessary because you will be flagged by GMail otherwise. 
+  
+  <a href="https://www.python.org/">![Python](https://img.shields.io/badge/pythonv-3.8-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)</a>
+  <a href="https://mail.google.com/">![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>
+  <a href="https://github.com/oliviagallucci/gmail-brute-force/blob/master/LICENSE.md">![GPLv3 license](https://img.shields.io/badge/License-GPLv3-green.svg?style=for-the-badge)</a>
+  <a href="https://github.com/sponsors/oliviagallucci">![Github-sponsors](https://img.shields.io/badge/sponsor-pink?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)</a>
 
-A Python script to brute-force GMail accounts with a target email address, a password list, and a wait duration between login attempts. The waiting period is necessary because you will be flagged by GMail otherwise. 
+</div>
+
+
 
 ## Getting Started
 
